@@ -22,6 +22,15 @@ namespace C44_G03_CS06
         Winter
     }
 
+    [Flags]
+    internal enum Permissions : byte
+    {
+        Delete = 1,
+        Execute = 2,
+        Read = 4,
+        Write = 8,
+    }
+
 
     internal class Program
     {
@@ -61,6 +70,37 @@ namespace C44_G03_CS06
             //            break;
             //    }
             //}
+            #endregion
+
+            #region 3-Assign the following Permissions (Read, write, Delete, Execute) in a form of Enum. Create Variable from previous Enum to Add and Remove Permission from variable, check if specific Permission existed inside variable
+
+            //Permissions permissions = new Permissions();
+
+            //// Add
+            //permissions = Permissions.Delete;
+
+            //permissions |= Permissions.Read;
+
+            //permissions |= Permissions.Write;
+
+            //permissions |= Permissions.Execute;
+
+            //Console.WriteLine(permissions);
+
+            //// Remove
+            //permissions ^= Permissions.Read;
+            //permissions ^= Permissions.Write;
+            //permissions ^= Permissions.Execute;
+            //Console.WriteLine(permissions);
+
+
+            //// Cheack
+            //if ((permissions & Permissions.Read) == Permissions.Read)
+            //    Console.WriteLine("Has Read Permission");
+            //else
+            //    Console.WriteLine("Does NOT have Read Permission");
+
+
             #endregion
         }
     }
